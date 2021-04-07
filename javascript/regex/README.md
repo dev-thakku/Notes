@@ -70,7 +70,7 @@ let r3 = regex.test(str3);
 ```
 In the above example `r1` will be `true`, `r2` also will be `true` and `r3` will be `false`.
 
-### With Flag `g`
+#### With Flag `g`
 ```javascript
 const str1 = "Bag";
 const str2 = "Big";
@@ -82,3 +82,13 @@ let r1 = regex.match(str1);
 let r2 = regex.match(str2);
 let r3 = regex.match(str3);
 ```
+In the above example `r1` will be `["Bag"]`, `r2` will return `["Big"]` and `r3` will return `["Bag"]`.
+
+### Specifiying Range
+We can easily specify a range of characters in the character set using a hyphen `-`.
+
+Example:
+```js
+const regex = /m[a-z]n/;
+```
+In the above example the `regex` will be equals to `"man"`, `"mbn"`, `"mcn"`, ..., `"mzn"`.
