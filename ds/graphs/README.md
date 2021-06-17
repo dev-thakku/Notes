@@ -28,23 +28,34 @@ An undirected graph is graph, in which all the edges are **bidirectional**.
 
 A graph can be reprecented using
 
-1. Adjacency Matrix
-2. Adjacency List
+1. [Adjacency Matrix](#adjacency-matrix)
+2. [Adjacency List](#adjacency-list)
 
 #### 1. Adjacency Matrix:
 
 An adjacency matrix is a square matrix used to represent a graph. The adjacency matrix is a (0,1)-matrix with zeros on its diagonal.
 
->The size of the matrix is `VxV` where `V` is the number of vertices in the graph and the value of an entry `A[i][j]` is either 1 or 0 depending on whether there is an edge from vertex `i` to vertex `j`.
+> The size of the matrix is `VxV` where `V` is the number of vertices in the graph and the value of an entry `A[i][j]` is either 1 or 0 depending on whether there is an edge from vertex `i` to vertex `j`.
 
 | <img src="https://cdn.programiz.com/sites/tutorial2program/files/adjacency-matrix_1.png" alt="Directed Graph"/> |
 :---:
 | <c> Adjacency List representation </c> |
 
-
 #### 2. Adjacency List:
+
 An adjacency list represents a graph as an array of linked lists. The index of the array represents a vertex and each element in its linked list represents the other vertices that form an edge with the vertex.
 
 | <img src="https://cdn.programiz.com/sites/tutorial2program/files/adjacency-list.png" alt="Directed Graph"/> |
 :---:
 | <c> Adjacency List representation </c> |
+
+## Traversal Methods
+
+Mainly there are two types of traversal methods. They are:
+
+- [Breadth First Search (BFS)](#bfs)
+- [Depth First Search (DFC)](#dfs)
+
+### 1. Breadth First Search {#bfs}
+
+### 2. Depth First Search {#dfs}
