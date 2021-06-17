@@ -18,3 +18,12 @@ Browse to the Notes you want!
         <li>ES6</li>
     </ul>
 </details>
+
+<details>
+    <summary>
+        <b>GPTC NOTES</b> 
+    </summary>
+    <ul>
+        <li><a href="/ds"> Data Structure</a></li>
+    </ul>
+</details>
