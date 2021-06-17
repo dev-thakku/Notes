@@ -35,23 +35,14 @@ A graph can be reprecented using
 
 An adjacency matrix is a square matrix used to represent a graph. The adjacency matrix is a (0,1)-matrix with zeros on its diagonal.
 
-> The size of the matrix is `VxV` where `V` is the number of vertices in the graph and the value of an entry `A[i][j]` is either 1 or 0 depending on whether there is an edge from vertex `i` to vertex `j`.
+>The size of the matrix is `VxV` where `V` is the number of vertices in the graph and the value of an entry `A[i][j]` is either 1 or 0 depending on whether there is an edge from vertex `i` to vertex `j`.
 
-<!-- | <img src="https://cdn.programiz.com/sites/tutorial2program/files/adjacency-matrix_1.png" alt="Directed Graph"/> |
+| <img src="https://cdn.programiz.com/sites/tutorial2program/files/adjacency-matrix_1.png" alt="Directed Graph"/> |
 :---:
-| <c> Adjacency List representation </c> | -->
+| <c> Adjacency List representation </c> |
 
-<table>
-    <tbody>
-        <tr>
-            <img src="https://cdn.programiz.com/sites/tutorial2program/files/adjacency-matrix_1.png" alt="Directed Graph"/>
-        </tr>
-        <tr>Adjacency List representation</tr>
-    </tbody>
-</table>
 
 #### 2. Adjacency List:
-
 An adjacency list represents a graph as an array of linked lists. The index of the array represents a vertex and each element in its linked list represents the other vertices that form an edge with the vertex.
 
 | <img src="https://cdn.programiz.com/sites/tutorial2program/files/adjacency-list.png" alt="Directed Graph"/> |
