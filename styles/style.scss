@@ -9,7 +9,7 @@
 body {
   --clr-primary: var(--white);
   --bg-primary: var(--black);
-  --bg-ancent: var(--grey)
+  --bg-ancent: var(--grey);
 }
 
 * {
@@ -24,7 +24,12 @@ a {
 }
 
 code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 1em;
   font-family: monospace;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
 }
 
 .nav {
@@ -47,6 +52,6 @@ code {
 }
 
 .nav-item:hover {
-    background: var(--bg-ancent);
-    color: var(--bg-primary);
+  background: var(--bg-ancent);
+  color: var(--bg-primary);
 }
