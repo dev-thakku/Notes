@@ -110,8 +110,8 @@ The algorithm works as follows:
     <td align="center">4 remains in the queue</td>
   </tr>
   <tr>
-    <td rowspan=2>Step 6</td>
-    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-bfs-step-5.png" alt="Step6"></td>
+    <td rowspan=2 width="85px">Step 6</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-bfs-step-5.png" alt="Step6" ></td>
   </tr>
   <tr>
     <td align="center">Visit last remaining item in the stack to check if it has unvisited neighbors</td>
