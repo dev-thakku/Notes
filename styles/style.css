@@ -59,4 +59,26 @@ code {
   background: var(--bg-ancent);
   color: var(--bg-primary);
 }
+
+header {
+  padding: 1rem 1.25rem;
+}
+
+main {
+  padding: 0 1.5rem;
+}
+
+main > * {
+  margin: 0.75rem 0;
+}
+
+main ul {
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+  margin-top: .5rem;
+}
+
+main ul a {
+  color: #2d6fff;
+}
 /*# sourceMappingURL=style.css.map */

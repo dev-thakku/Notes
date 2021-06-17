@@ -55,3 +55,24 @@ code {
   background: var(--bg-ancent);
   color: var(--bg-primary);
 }
+
+header {
+  padding: 1rem 1.25rem;
+}
+
+main {
+  padding: 0 1.5rem;
+
+  > * {
+    margin: 0.75rem 0;
+  }
+
+  ul {
+    padding-inline-start: 40px;
+    margin-top: .5rem;
+
+    a {
+      color: rgb(45, 111, 255);
+    }
+  }
+}
