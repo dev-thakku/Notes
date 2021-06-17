@@ -53,9 +53,72 @@ An adjacency list represents a graph as an array of linked lists. The index of t
 
 Mainly there are two types of traversal methods. They are:
 
-- [Breadth First Search (BFS)](#bfs)
-- [Depth First Search (DFC)](#dfs)
+- [Breadth First Search (BFS)](#breadth-first-search)
+- [Depth First Search (DFC)](#depth-first-search)
 
-### 1. Breadth First Search {#bfs}
+### 1. Breadth First Search 
 
-### 2. Depth First Search {#dfs}
+A standard BFS implementation puts each vertex of the graph into one of two categories:
+
+1. Visited
+1. Not Visited
+
+The purpose of the algorithm is to mark each vertex as visited while avoiding cycles.
+
+The algorithm works as follows:
+
+1. Start by putting any one of the graph's vertices at the back of a queue.
+2. Take the front item of the queue and add it to the visited list.
+3. Create a list of that vertex's adjacent nodes. Add the ones which aren't in the visited list to the back of the queue.
+4. Keep repeating steps 2 and 3 until the queue is empty.
+
+
+<table>
+  <tr>
+    <td rowspan=2>Step 1</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-bfs-step-0.png" alt="Step1"></td>
+  </tr>
+  <tr>
+    <td align="center">Undirected graph with 5 vertices</td>
+  </tr>
+  <tr>
+    <td rowspan=2>Step 2</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-bfs-step-1.png" alt="Step2"></td>
+  </tr>
+  <tr>
+    <td align="center">Visit start vertex and add its adjacent vertices to queue</td>
+  </tr>
+  <tr>
+    <td rowspan=2>Step 3</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-bfs-step-2_2.png" alt="Step3"></td>
+  </tr>
+  <tr>
+    <td align="center">Visit the first neighbour of start node 0, which is 1</td>
+  </tr>
+  <tr>
+    <td rowspan=2>Step 4</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-bfs-step-3.png" alt="Step4"></td>
+  </tr>
+  <tr>
+    <td align="center">Visit 2 which was added to queue earlier to add its neighbours</td>
+  </tr>
+  <tr>
+    <td rowspan=2>Step 5</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-bfs-step-4.png" alt="Step5"></td>
+  </tr>
+  <tr>
+    <td align="center">4 remains in the queue</td>
+  </tr>
+  <tr>
+    <td rowspan=2>Step 6</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-bfs-step-5.png" alt="Step6"></td>
+  </tr>
+  <tr>
+    <td align="center">Visit last remaining item in the stack to check if it has unvisited neighbors</td>
+  </tr>
+  <tr>
+    <td colspan=2 align="center">Since the queue is empty, we have completed the Breadth First Traversal of the graph.</td>
+  </tr>
+</table>
+
+### 2. Depth First Search
