@@ -24,11 +24,13 @@ a {
 }
 
 code {
-  padding: 0.2em 0.4em;
+  display: block;
+  padding: 0.5em 0.4em;
   margin: 0;
-  font-size: 1em;
+  font-size: 1.3rem;
   font-family: monospace;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(95, 95, 95, 0.25);
+  color: rgba(0, 0, 0, 0.87);
   border-radius: 6px;
 }
 
@@ -47,13 +49,13 @@ code {
       height: 20px;
       line-height: 20px;
       color: var(--clr-primary);
+
+      &:hover {
+        background: var(--bg-ancent);
+        color: var(--bg-primary);
+      }
     }
   }
-}
-
-.nav-item:hover {
-  background: var(--bg-ancent);
-  color: var(--bg-primary);
 }
 
 header {
@@ -69,7 +71,7 @@ main {
 
   ul {
     padding-inline-start: 40px;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
 
     a {
       color: rgb(45, 111, 255);

@@ -1,8 +1,8 @@
 # Data Structures and Algorithms
 
-- ### Graph:
-    - [16/06](16-06-2021) (Introduction)
-    - [17/06](17-06-2021) (Traversal Methods, `makeGraph()`)
+- ### [Graph](graphs):
+    - [16/06](graphs/#introduction) (Introduction, Representation of Graphs)
+    - [17/06](graphs/#traversal) (Traversal Methods, `makeGraph()`)
 
 - ### Tree:
     - [15/06](15-06-2021) (Expression Tree)
