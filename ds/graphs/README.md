@@ -37,9 +37,14 @@ An adjacency matrix is a square matrix used to represent a graph. The adjacency 
 
 > The size of the matrix is `VxV` where `V` is the number of vertices in the graph and the value of an entry `A[i][j]` is either 1 or 0 depending on whether there is an edge from vertex `i` to vertex `j`.
 
-| <img src="https://cdn.programiz.com/sites/tutorial2program/files/adjacency-matrix_1.png" alt="Directed Graph"/> |
+<!-- | <img src="https://cdn.programiz.com/sites/tutorial2program/files/adjacency-matrix_1.png" alt="Directed Graph"/> |
 :---:
-| <c> Adjacency List representation </c> |
+| <c> Adjacency List representation </c> | -->
+
+<table>
+    <tr><img src="https://cdn.programiz.com/sites/tutorial2program/files/adjacency-matrix_1.png" alt="Directed Graph"/></tr>
+    <tr>Adjacency List representation</tr>
+</table>
 
 #### 2. Adjacency List:
 
