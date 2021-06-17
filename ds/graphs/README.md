@@ -42,8 +42,12 @@ An adjacency matrix is a square matrix used to represent a graph. The adjacency 
 | <c> Adjacency List representation </c> | -->
 
 <table>
-    <tr><img src="https://cdn.programiz.com/sites/tutorial2program/files/adjacency-matrix_1.png" alt="Directed Graph"/></tr>
-    <tr>Adjacency List representation</tr>
+    <tbody>
+        <tr>
+            <img src="https://cdn.programiz.com/sites/tutorial2program/files/adjacency-matrix_1.png" alt="Directed Graph"/>
+        </tr>
+        <tr>Adjacency List representation</tr>
+    </tbody>
 </table>
 
 #### 2. Adjacency List:
