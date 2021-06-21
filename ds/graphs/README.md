@@ -122,3 +122,106 @@ The algorithm works as follows:
 </table>
 
 ### 2. Depth First Search
+
+A standard DFS implementation puts each vertex of the graph into one of two categories:
+
+1. Visited
+1. Not Visited
+
+The purpose of the algorithm is to mark each vertex as visited while avoiding cycles.
+
+The DFS algorithm works as follows:
+
+1. Start by putting any one of the graph's vertices on top of a stack.
+1. Take the top item of the stack and add it to the visited list.
+1. Create a list of that vertex's adjacent nodes. Add the ones which aren't in the visited list to the top of the stack.
+1. Keep repeating steps 2 and 3 until the stack is empty.
+
+
+<table>
+  <tr>
+    <td rowspan=2>Step 1</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-0.png" alt="Step1"></td>
+  </tr>
+  <tr>
+    <td align="center">Undirected graph with 5 vertices</td>
+  </tr>
+  <tr>
+    <td rowspan=2>Step 2</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-1.png" alt="Step2"></td>
+  </tr>
+  <tr>
+    <td align="center">Visit the element and put it in the visited list</td>
+  </tr>
+  <tr>
+    <td rowspan=2>Step 3</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-2.png" alt="Step3"></td>
+  </tr>
+  <tr>
+    <td align="center">Visit the element at the top of stack</td>
+  </tr>
+  <tr>
+    <td rowspan=2>Step 4</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-3.png" alt="Step4"></td>
+  </tr>
+  <tr>
+    <td align="center">Vertex 2 has an unvisited adjacent vertex in 4, so we add that to the top of the stack and visit it.</td>
+  </tr>
+  <tr>
+    <td rowspan=2>Step 5</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-4.png" alt="Step5"></td>
+  </tr>
+  <tr>
+    <td align="center">Vertex 2 has an unvisited adjacent vertex in 4, so we add that to the top of the stack and visit it.</td>
+  </tr>
+  <tr>
+    <td rowspan=2 width="85px">Step 6</td>
+    <td><img src="https://cdn.programiz.com/sites/tutorial2program/files/graph-dfs-step-5.png" alt="Step6" ></td>
+  </tr>
+  <tr>
+    <td align="center">After we visit the last element 3, it doesn't have any unvisited adjacent nodes, so we have completed the Depth First Traversal of the graph.</td>
+  </tr>
+</table>
+
+# Algorithms
+
+## 1. `makeGraph()`
+```c++
+template <class T>
+void Graph<T>::makeGraph(T )
+{
+  int i, edges,
+}
+```
+
+
+## 2. `BFS(T)`
+
+```c++
+template <class T>
+void Graph<T>::BFS(T s)
+{
+  int v;
+  for (int i = 0; i <= nodes; i++)
+    visited[i] = 0;
+  QueueADT<int> q;
+  q.enqueue(s);
+  visited[s] = 1;
+  while (!q.isEmpty()) 
+  {
+    v = q.dequeue();
+    cout << v << "\t";
+    for (int i = 0; i <= nodes; i++)
+    {
+      if (graph[v][i] == 1)
+      {
+        if (visited[i] == 0)
+        {
+          q.enqueue(i);
+          visited[i] = 1;
+        }
+      }
+    }
+  }
+}
+```
