@@ -225,3 +225,15 @@ void Graph<T>::BFS(T s)
   }
 }
 ```
+
+## 3. `DFS(T)`
+
+```c++
+template<class T>
+void Graph<T>::dfs(int s)
+{
+   for(i=0; i<nodes; i++)
+      visited[i]=0;   
+   visit(visited,s); 
+}
+```
